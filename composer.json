@@ -1,0 +1,30 @@
+{
+    "name": "autotask/request-builder",
+    "description": "A request builder for the Autotask API.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aidan Casey",
+            "email": "aidan.casey@anteris.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Autotask\\RequestBuilder\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "vimeo/psalm": "^5.6",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "require": {
+        "php": "^8.1",
+        "autotask/client": "dev-master"
+    },
+    "scripts": {
+        "coverage": "vendor/bin/phpunit --coverage-html ./build/coverage",
+        "psalm": "vendor/bin/psalm --no-cache",
+        "test": "vendor/bin/phpunit"
+    }
+}
